@@ -20,7 +20,7 @@ resource "aws_instance" "one" {
       "sudo yum systemctl enable httpd",
       "sudo yum cd /var/www/html/",
       "sudo git clone  https://github.com/Ironhack-Archive/online-clone-amazon.git",
-      "sudo mv online-clone-amazon/* .,
+      "sudo mv online-clone-amazon/* /var/www/html/",
       "sudo systemctl restart httpd"
 
     ]
