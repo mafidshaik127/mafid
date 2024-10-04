@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "two" {
+resource "aws_instance" "one" {
   ami                    = "ami-0e54eba7c51c234f6"
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["sg-0cee9adebe6014f67"]
